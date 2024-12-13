@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIENDA ONLINE</title>
+    <!-- link fontawesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="./css/tienda 1.css">
+</head>
+<body>
+    <div class="main">
+        <h1>TIENDA ON LINE</h1>
+        <hr>
+        <h2>PORTAFOLIO DE TIENDA</h2>
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('shampoo')">Todos</button>
+            <button class="btn" onclick="filterSelection('desodorante')">Desodorante</button>
+            <button class="btn" onclick="filterSelection('crema de cuerpo')">Crema de cuerpo</button>
+        </div>
+        <!--  Interruptor claro/oscuro -->
+        <div id="toggle">
+            <input type="checkbox" class="checkbox" id="chk">
+            <label for="chk" class="label">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+            <div class="ball"></div>
+            </label>
+        </div>
+        <!-- Grid Galeria de portafolio -->
+        <div class="row">
+            <div class="column Shampoo">
+                <div class="content">
+                    <img src="https://exitocol.vtexassets.com/arquivos/ids/24441613/Shampoo-400ml-Acondicionador-170ml-Pantene-Restauracin-1000035_a.jpg?v=638609307051800000" alt="" style="width: 250px;height: 250px;">
+                    <h4>Shampoo Pantene</h4>
+                    <p>Shampoo Pantene</p>
+                </div>
+            </div>
+            <!-- segunda imagen -->
+            <div class="column shampoo">
+                <div class="content">
+                    <img src="https://plazavea.vteximg.com.br/arquivos/ids/26358504-512-512/20144875.jpg" alt="" style="width: 250px;height: 250px;">
+                    <h4>Shampoo Sedal</h4>
+                    <p>Shampoo Sedal</p>
+                </div>
+            </div>
+            <!-- tercera imagen -->
+            <div class="column shampoo">
+                <div class="content">
+                    <img src="https://colsubsidio.vteximg.com.br/arquivos/ids/163624-1200-1200/7891150008953.jpg?v=637219666636000000" alt="" style="width: 250px;height: 250px;">
+                    <h4>Shampoo Dove</h4>
+                    <p>Shampoo Dove</p>
+                </div>
+            </div>
+            <!-- seccion desodorantes -->
+             <!-- 1RA imagen -->
+            <div class="column desodorante">
+                <div class="content">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-Vas6mHiMScxYu_sH8cBya5diWWpfb9Z3UA&s" alt="" style="width: 250px;height: 250px;">
+                    <h4>Desodorante Rexona</h4>
+                    <p>Desodorante Rexona en rolon</p>
+                </div>
+            </div>
+            <!-- 2A imagen -->
+            <div class="column desodorante">
+                <div class="content">
+                    <img src="https://locatelcolombia.vtexassets.com/arquivos/ids/327541/7702018913640_1_Gillette-Power-Beads-Cool-Wave-Gel-Invisible-Antitranspirante-X-82g.jpg?v=638023256006100000" alt="" style="width: 250px;height: 250px;">
+                    <h4>Desodorante Gillette</h4>
+                    <p>Desodorante Gillette </p>
+                </div>
+            </div>
+            <!-- 3A imagen -->
+            <div class="column desodorante">
+                <div class="content">
+                    <img src="https://images-us.nivea.com/-/media/miscellaneous/media-center-items/7/b/9/bcd154a22b4b4ab79a00054c81246f74-web_1010x1180_transparent_png.png" alt="" style="width: 250px;height: 250px;">
+                    <h4>Desodorante Nivea</h4>
+                    <p>Desodorante Nivea</p>
+                </div>
+            </div>
+            <!-- 1A imagen -->
+            <div class="column cremas de cuerpo">
+                <div class="content">
+                    <img src="https://images.ctfassets.net/ft324xor1pp0/4lMwqMZUBYaUc35Vh3ZWaz/d902b6015493ebf09130cc89e064c818/lubriderm-producto-piel-sensible-2-es-co" alt="" style="width: 250px;height: 250px;">
+                    <h4>Cremas lubriderm</h4>
+                    <p>Cremas lubriderm</p>
+                </div>
+            </div>
+            <!-- 2A imagen -->
+            <div class="column cremas para cuerpo">
+                <div class="content">
+                    <img src="https://locatelcolombia.vtexassets.com/arquivos/ids/336685/4005808319695_2_CREMA-CORPORAL-NIVEA-BODY-MILK-NUTRITIVA-X-400ML.jpg?v=638173803180300000" alt="" style="width: 250px;height: 250px;">
+                    <h4>Cremas Nivea</h4>
+                    <p>Cremas Nivea</p>
+                </div>
+            </div>
+             <!-- 2A imagen -->
+             <div class="column cremas para cuerpo">
+                <div class="content">
+                    <img src="https://images.ctfassets.net/ft324xor1pp0/1s1Ek8ttAusfS94xucRzGy/7997205e4803a00af8a55791fae05e88/jb_cliq_antes_de_dormir_12x200_f-es-co" alt="" style="width: 250px;height: 250px;">
+                    <h4>Cremas Johnson Baby</h4>
+                    <p>Crenmas Johnson Baby</p>
+                </div>
+            </div>
+        </div> <!-- fin .row-->
+    </div> <!-- fin main -->
+    <script src="./js/tienda 1.js"></script>

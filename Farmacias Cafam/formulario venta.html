@@ -1,0 +1,82 @@
+!DOCTYPE Html>
+<head>
+<title>FORMULARIO CHECKED </title>
+<link rel="stylesheet" href="CSS/form-check.css">
+<!-- link de sitio SweetAlert -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+<link rel="stylesheet" href="./css/form Venta.css">
+<!-- Programa que permita comprar tipos de productos de aseo con adicionales-->
+<center>
+<img src="https://www.comfenalcovalle.com.co/wp-content/uploads/2023/05/DROGUERIAS-CAFAM-VERTICAL-01-scaled.jpg" alt="" height="100" width="100">
+<h1>FACTURA DE VENTAS EN FARMACIAS </h1>
+<form action="" method="">
+<!-- Sección cabecera de encabezado de factura -->
+<table><caption>FACTURA DE VENTA</caption>
+<tr><th>Nombre</th><td><input type="text" size="20" ></td><th>TIPO DOCUMENTO </th><th><select id="tp"><option>CC </option><option>CE</option><option>NIT</option></select></th><th>No.</th>
+<td><input type="text" size="25"></td></tr>
+<tr><th>DIRECCION </th><td><input type="text" id="dir" size="25"></td><th>TELEFONO </th><td><input type="text" id="tel" size="20"></td><th>EMPLEADO </th><td><input type="text" id="emp" size="25"></td></tr>
+<!-- Sección cabecera de detalle de factura -->
+<tr><th>REFERENCIA</th>
+    <th colspan="2">DESCRIPCION</th><th>CANTIDAD</th><th>VALOR UNITARIO</th><th>SUBTOTAL</th></tr>
+    <tr>
+    <th><select id="prod1" onchange="mostrar();">
+    <option>Seleccionar:</option>
+    <option value="30000">Combo Shampoos</option>
+    <option value="20000">Combo Desodorantes</option>
+    <option value="40000"> Combo Cremas de cuerpo</option>
+    </select></th>
+    <th colspan="2"><input type="text" id="desc01" size="40"></th>
+    <th><input type="number" id="cant01" size="10"></th>
+    <th><input type="number" id="vau01" size="15" disabled></th>
+    <th><input type="text" id="vat01" size="15"disabled></th></tr>
+    <tr>
+    <th><select id="prod2" onchange="mostrar();">
+    <option>Seleccionar:</option>
+    <option value="25000">Combo Shampoos</option>
+    <option value="20000">Combo Desodorantes</option>
+    <option value="35000">Combo Crema de Cuerpo</option>
+    </select></th>
+    <th colspan="2"><input type="text" id="desc02" size="40"></th>
+    <th><input type="number" id="cant02" size="10"></th>
+    <th><input type="text" id="vau02" size="15" disabled></th>
+    <th><input type="text" id="vat02" size="15" disabled></th></tr>
+    <tr>
+    <th><select id="prod3" onchange="mostrar();">
+    <option>Seleccionar:</option>
+    <option value="25000">Combo Shampoos</option>
+    <option value="20000">Combo Desodorantes</option>
+    <option value="35000">Combo Cremas de Cuerpo</option>
+    </select></th>
+    <th colspan="2"><input type="text" id="desc03" size="40"></th>
+    <th><input type="number" id="cant03" size="10"></th>
+    <th><input type="text" id="vau03" size="15" disabled></th>
+    <th><input type="text" id="vat03" size="15" disabled></th></tr>
+    <tr><th colspan="6">ADICIONALES</th></tr>
+    <tr><th colspan="2" rowspan="2"><img src="https://olimpica.vtexassets.com/arquivos/ids/1299651/42277057_1.jpg?v=638428256296130000" alt="">
+    <input type="checkbox" id="checkbox1" name="adic">CREMA FACIAL_$18.000 </th><th colspan="2" rowspan="2"><img src="https://images-na.ssl-images-amazon.com/images/I/51oBYgLPMUL._AC_UL210_SR210,210_.jpg" alt="">
+    <input type="checkbox" id="checkbox2" name="adic">DESODORANTE AEROSOL _12.500 </th><th colspan="2" rowspan="2"><img src="https://megatiendas.vtexassets.com/arquivos/ids/170514/7791293022581.jpg?v=638574367000600000" alt="">
+    <input type="checkbox" id="checkbox3" name="adic">SHAMPOO INTIMO_$17.000</th></tr>
+<!-- Sección liquidación de factura -->
+<tr></tr>
+<tr><th colspan="4">TOTAL ADICIONALES</th>
+<th colspan="2"><input type="number" id="adic0" disabled></th></tr>
+<tr><th colspan="2">FORMA DE PAGO</th>
+<th colspan="2"><input type="radio" name="fp" id="radio1">Efectivo <br>
+<input type="radio" name="fp" id="radio2">Nequi <br>
+<input type="radio" name="fp" id="radio3">TjCredito</th>
+<th>SUBTOTAL</th><td><input type="text" id="subt" size="25"></td></tr>
+<tr>
+<th colspan="4" rowspan="3">OBSERVACIONES: REVISE SU PEDIDO ENTREGADO Y GRACIAS POR ATENDERTE!!</th>
+<th>IVA</th><td><input type="text" id="iva" size="25"></td></tr>
+<tr><th>DESCUENTO</th><td><input type="text" id="desc" size="25"></td></tr>
+<tr><th>NETO</th><td><input type="text" id="neto" size="25"></td></tr>
+<tr><th colspan="2"><input type="button" value="CALCULAR PAGO" onclick="mostrar();"></th>
+<th colspan="2"><input type="reset" value="BORRAR"></th>
+<th colspan="2"><input type="button" value="ENVIAR" onclick="enviar();"></th></tr>
+</form>
+</center>
+<script src="js/form check.js"></script>
+</body>
+</html>
